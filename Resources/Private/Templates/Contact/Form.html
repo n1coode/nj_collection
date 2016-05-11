@@ -1,0 +1,135 @@
+{namespace njcVH=N1coode\NjCollection\ViewHelpers}
+<div class="{ext.key} {ext.domain} {ext.action} clearfix">
+    <f:if condition="{formData.success}">
+        <f:then>
+			<f:render partial="Form/Message" arguments="{headline:'{ext.langFile}form.success.dataSent',message:'{ext.langFile}form.success.thankYou',type:'success'}" />
+			<f:comment>//TODO Summary</f:comment>
+		</f:then>
+		<f:else>
+			<f:form enctype="multipart/form-data">
+                <f:form.hidden name="contactRequest" value="1" />
+				<div class="form-wrapper">
+					<f:if condition="{errors}">
+                        <f:then>
+                            <f:render partial="Form/Message" arguments="{type:'error',headline:'{ext.langFile}form.info.errorsOccurs.headline',message:'form.info.errorsOccurs.body'}"></f:render>        
+                        </f:then>
+                        <f:else>
+                            <f:render partial="Form/Message" arguments="{type:'info',message:'{ext.langFile}form.info.mandatoryFields'}"></f:render>
+                        </f:else>
+                    </f:if>
+					
+					<f:if condition="{options.useFieldsets}">
+						<f:then>
+							<f:render section="fields" arguments="{_all}" />
+						</f:then>
+						<f:else>
+							<fieldset name="data">
+								<f:render section="fields" arguments="{_all}" />
+							</fieldset>
+						</f:else>
+					</f:if>
+					
+					
+					<fieldset name="finish">
+                        <f:form.submit name="submitFormData" value="{f:translate(key:'{ext.langFile}form.submit.sendMessage')}" />
+                    </fieldset>
+				</div>
+			</f:form>
+			<script type="text/javascript">
+				var _form_container = ".{ext.key}.{ext.domain}.{ext.action}";
+				var _form_field = _form_container + " .field-wrapper";
+				var _form_field_mandatory = _form_field + "[data-mandatory=1]";
+				var _form_field_error = _form_field_mandatory + ".error";
+				var _form_fieldset = _form_container + " FIELDSET";	
+				$(document).ready(function()
+				{
+					$(_form_fieldset).each(function()
+					{
+						if($(this).children(_form_field).length > 0)
+						{
+							if($(this).children(_form_field_error).length > 0)
+							{
+								$(this).attr("status","error");
+							}
+							else
+							{
+								$(this).attr("status","valid");
+							}
+						}
+					});
+					//$(".{ext.key}.{ext.domain}.{ext.action} [data-mandatory=0]").hide(0);
+				});
+			</script>
+		</f:else>
+	</f:if>
+</div>
+
+
+
+<f:section name="errorMessage">
+    <div class="input-error"><f:translate key="form.error.{id}.{error}"></f:translate></div>
+</f:section>
+
+<f:section name="fields">
+	<f:for each="{fields}" as="fieldset" key="name" iteration="fieldsetIterator">
+		<f:if condition="{options.useFieldsets}">
+			<f:then>
+				<fieldset name="{name}">
+					<f:render section="fieldset" arguments="{_all}" />
+				</fieldset>
+			</f:then>
+			<f:else>
+				<f:render section="fieldset" arguments="{_all}" />
+			</f:else>
+		</f:if>
+	</f:for>
+</f:section>
+
+
+<f:section name="fieldset">
+	<f:for each="{fieldset}" as="field" key="title" iteration="iterator">
+		<f:alias map="{id:title,mandatory:field.mandatory,error:'{njcVH:array(inputArray: errors, key: title)}'}">
+			<div class="field-wrapper{f:if(condition:'{error}',then:' error',else:'')}" data-mandatory="{f:if(condition:'{mandatory}',then:'1',else:'0')}">
+				<f:render section="label" arguments="{id:id,mandatory:mandatory}" ></f:render>
+				<div class="input-group">
+					<f:render section="field_{field.type}" arguments="{_all}" ></f:render>
+				</div>
+				<f:if condition="{error}">
+					<span class="note"><f:translate key="{ext.langFile}form.error.{title}.{njcVH:array(inputArray:errors,key:title)}"></f:translate></span>
+				</f:if>
+			</div>
+		</f:alias>
+	</f:for>
+</f:section>
+
+<f:section name="field_input">
+	<f:alias map="{args:{spellcheck:'false',autocomplete:'off'}}">
+		<span class="input-group-addon"><i class="fa fa-{field.addon-class} fa-fw"></i></span>
+		<f:form.textfield class="form-control" id="{id}" name="{id}" value="{njcVH:array(inputArray: formData, key: '{id}')}" type="{f:if(condition:'{field.eval}',then:'{field.eval}',else:'text')}" additionalAttributes="{njcVH:inputArguments(args:field)}" />
+	</f:alias>
+</f:section>
+
+<f:section name="field_text">
+	<f:form.textarea id="{id}" name="{id}" value="{njcVH:array(inputArray: formData, key: '{id}')}" class="form-control" additionalAttributes="{rows:'7'}" /> 
+</f:section>
+
+
+<f:section name="label">
+	<label for="{id}"><f:translate key="{ext.langFile}form.label.{id}"></f:translate><f:if condition="{mandatory}"><span class="marker">*</span></f:if></label>
+</f:section>
+
+<f:comment>
+	 arguments="{id:'{title}',value:'{submitData.lastName}',mandatory:1,addon-class:'user',error:'{errors.lastName}', args:{spellcheck:'false',autocomplete:'off'}}"
+	 <div class="status {f:if(condition:'{error}',then:'error',else:'ok')}">
+        <label for="{id}"><f:translate key="form.label.{id}"></f:translate> <f:if condition="{mandatory}"><span class="marker">*</span></f:if></label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-{addon-class} fa-fw"></i></span>
+			<f:form.textfield class="form-control" id="{id}" name="{id}" value="{value}" type="{f:if(condition:'{type}',then:'{type}',else:'text')}" additionalAttributes="{njcVH:inputArguments(args:args)}" />
+		</div>
+        <f:if condition="{mandatory}">
+            <f:if condition="{error}">
+                <div class="input-error"><f:translate key="form.error.{id}.{error}"></f:translate></div>
+            </f:if>
+        </f:if>
+    </div>
+</f:comment>

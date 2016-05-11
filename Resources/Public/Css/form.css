@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.02.2016, 12:44:21
+    Author     : Nico Jatzkowski <nj@n1coo.de>
+*/
+FORM FIELDSET {
+  background-image: url('../Gfx/pattern/carbon.png');
+  border-left: 7px solid rgba(42, 42, 42, 0.125);
+  border-right: 2px solid rgba(31, 170, 214, 0.5);
+  margin-bottom: 25px;
+  padding: 12.5px 25px 25px;
+}
+FORM FIELDSET[name="finish"] {
+  border-left-color: #2a2a2a;
+  border-right-color: rgba(42, 42, 42, 0.125);
+}
+FORM FIELDSET[status="error"] {
+  border-right-color: #ff5a00;
+}
+FORM FIELDSET[status="valid"] {
+  border-left-color: rgba(31, 170, 214, 0.5);
+  border-right-color: rgba(42, 42, 42, 0.125);
+}
+FORM FIELDSET[name="finish"] {
+  padding-bottom: 12.5px;
+}
+FORM FIELDSET .field-wrapper {
+  margin-bottom: 12.5px;
+}
+FORM FIELDSET .field-wrapper.error {
+  margin-bottom: 25px;
+}
+FORM FIELDSET .field-wrapper.error .input-group-addon {
+  background-color: rgba(217, 83, 79, 0.15);
+}
+FORM FIELDSET .field-wrapper.error .input-group-addon i {
+  color: #c9302c;
+}
+FORM FIELDSET .field-wrapper.error .input-group-addon,
+FORM FIELDSET .field-wrapper.error .form-control {
+  border-color: rgba(217, 83, 79, 0.75);
+}
+FORM FIELDSET .field-wrapper.error .form-control:focus {
+  border-color: rgba(217, 83, 79, 0.75);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 83, 79, 0.75);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 83, 79, 0.75);
+}
+FORM FIELDSET .field-wrapper:last-child {
+  margin-bottom: 0;
+}
+FORM FIELDSET .note {
+  padding: 0 9px;
+  color: #ff5a00;
+  border-right: 3px solid #ff5a00;
+  font-size: 16px;
+}
+FORM FIELDSET LABEL {
+  color: rgba(42, 42, 42, 0.5);
+  display: block;
+  font-size: 16.2px;
+}
+FORM FIELDSET LABEL .marker {
+  color: #DD0101;
+}
+FORM FIELDSET[name="fileUpload"] > DIV {
+  margin-bottom: 15px;
+}
+FORM FIELDSET[name="fileUpload"] > DIV:last-child {
+  margin-bottom: 0px;
+}
+FORM .wrapper.upload #correspondence,
+FORM .wrapper.upload #vita,
+FORM .wrapper.upload #reference,
+FORM .wrapper.upload #certificate {
+  display: none;
+}
+FORM .wrapper.upload .progressBar {
+  width: 50% !important;
+}
+FORM .wrapper.upload #button-correspondence-upload,
+FORM .wrapper.upload #button-vita-upload,
+FORM .wrapper.upload #button-reference-upload,
+FORM .wrapper.upload #button-certificate-upload {
+  display: none;
+}
+FORM .wrapper.upload input,
+FORM .wrapper.upload input[type="button"] {
+  margin-right: 7px;
+  float: left;
+}
+FORM .wrapper.upload input[type="button"] {
+  width: auto !important;
+  color: white;
+  background-color: #1faad6;
+  border-color: #1faad6;
+}
+FORM .wrapper.upload input[type="button"]:hover {
+  background-color: #ff5a00;
+  border-color: #ff5a00;
+}
+FORM .saturation {
+  margin-bottom: 15px;
+}
+FORM .saturation DIV.selection {
+  width: 50%;
+}
+FORM .saturation DIV.selection > DIV {
+  background-color: rgba(204, 204, 204, 0.35);
+  width: 49.9%;
+  height: 30px;
+  line-height: 30px;
+}
+FORM .saturation DIV.selection > DIV.checked {
+  background-color: rgba(0, 181, 225, 0.15);
+  color: #008cae;
+}
+FORM .saturation DIV.selection > DIV.checked I {
+  background-color: #00B5E1;
+  color: white;
+}
+FORM .saturation DIV.selection > DIV[data-selection="0"] {
+  float: left;
+}
+FORM .saturation DIV.selection > DIV[data-selection="0"] I {
+  float: left;
+  margin-right: 9px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+FORM .saturation DIV.selection > DIV[data-selection="1"] {
+  text-align: right;
+  float: right;
+}
+FORM .saturation DIV.selection > DIV[data-selection="1"] I {
+  float: right;
+  margin-left: 9px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+FORM .saturation DIV.selection > DIV I {
+  width: 40px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ccc;
+}
+FORM .status {
+  margin-bottom: 15px;
+}
+FORM .status.ok .input-group-addon {
+  color: #008cae;
+  background-color: rgba(0, 181, 225, 0.15);
+}
+FORM .status.error .input-group-addon {
+  color: #c9302c;
+  background-color: rgba(217, 83, 79, 0.15);
+}
+FORM .input-error {
+  background-color: rgba(217, 83, 79, 0.15);
+  border-left: 5px solid #c9302c;
+  color: #c9302c;
+  display: inline-block;
+  margin-left: 40px;
+  padding: 0 9px;
+}
+FORM .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+  padding: 3px 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+FORM .note {
+  background-color: rgba(217, 83, 79, 0.15);
+  margin-bottom: 25px;
+}
+FORM .form-control {
+  display: block;
+  width: 100%;
+  padding: 3px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  float: left;
+}
+FORM .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+FORM .form-control::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+FORM .form-control:-ms-input-placeholder {
+  color: #777777;
+}
+FORM .form-control::-webkit-input-placeholder {
+  color: #777777;
+}
+FORM .form-control[disabled],
+FORM .form-control[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+FORM .input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  display: table-cell;
+}
+FORM .input-group[class*="col-"] {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+FORM .input-group-addon {
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  display: table-cell;
+}
+FORM .input-group-addon,
+FORM .input-group-btn,
+FORM .input-group .form-control {
+  display: table-cell;
+}
+FORM .input-group-addon:not(:first-child):not(:last-child),
+FORM .input-group-btn:not(:first-child):not(:last-child),
+FORM .input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+FORM .input-group-addon,
+FORM .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+FORM .input-group .form-control:first-child,
+FORM .input-group-addon:first-child,
+FORM .input-group-btn:first-child > .btn,
+FORM .input-group-btn:first-child > .btn-group > .btn,
+FORM .input-group-btn:first-child > .dropdown-toggle,
+FORM .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+FORM .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+FORM .input-group-addon:first-child {
+  border-right: 0;
+}
+FORM .input-group .form-control:last-child,
+FORM .input-group-addon:last-child,
+FORM .input-group-btn:last-child > .btn,
+FORM .input-group-btn:last-child > .btn-group > .btn,
+FORM .input-group-btn:last-child > .dropdown-toggle,
+FORM .input-group-btn:first-child > .btn:not(:first-child),
+FORM .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+FORM .input-group-addon:last-child {
+  border-left: 0;
+}
+FORM .inputWrapper {
+  margin-bottom: 15px;
+}
+FORM INPUT,
+FORM SELECT,
+FORM TEXTAREA {
+  padding: 5px;
+  width: 50%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid silver;
+  font-size: 16px;
+  font-weight: 300;
+}
+FORM textarea:focus,
+FORM input[type="text"]:focus,
+FORM input[type="password"]:focus,
+FORM input[type="datetime"]:focus,
+FORM input[type="datetime-local"]:focus,
+FORM input[type="date"]:focus,
+FORM input[type="month"]:focus,
+FORM input[type="time"]:focus,
+FORM input[type="week"]:focus,
+FORM input[type="number"]:focus,
+FORM input[type="email"]:focus,
+FORM input[type="url"]:focus,
+FORM input[type="search"]:focus,
+FORM input[type="tel"]:focus,
+FORM input[type="color"]:focus,
+FORM .uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0px none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+FORM input[type="button"]:disabled {
+  opacity: 0.0025;
+  /* modern browser */
+  -moz-opacity: 0.0025;
+  /* older Mozilla browser */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.25);
+  /* IE8 in Standard Compliant Mode */
+  filter: alpha(opacity = 0.25);
+  /* IE5.x -7.0 */
+}
+FORM INPUT[type="submit"] {
+  padding: 0 9px;
+  color: white;
+  line-height: 32px;
+  height: 50px;
+  border: 9px solid rgba(42, 42, 42, 0.1);
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #00B5E1;
+  background-clip: padding-box;
+  text-transform: uppercase;
+  font-family: "OpenSans-Light", "Lucida Sans", Helvetica, Arial, Verdana, sans-serif;
+  cursor: pointer;
+}
+FORM INPUT[type="submit"]:hover {
+  background-color: #008cae;
+}
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-10-06" product-name="nj_collection">
+		<header/>
+		<body>
+			<trans-unit id="flexform.controller.carousel.index" xml:space="preserve">
+				<source>Carousel &#171; Index &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.contact.address" xml:space="preserve">
+				<source>Contact &#171; Address &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.contact.form" xml:space="preserve">
+				<source>Contact &#171; Form &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.contact.socialMedia" xml:space="preserve">
+				<source>Contact &#171; Social media &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.header.index" xml:space="preserve">
+				<source>Header &#171; Index &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.imageGallery.list" xml:space="preserve">
+				<source>Image gallery &#171; List &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.controller.testimonial.slider" xml:space="preserve">
+				<source>Testimonial &#171; Slider &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.label.typoScript" xml:space="preserve">
+				<source>Use typoscript settings</source>
+			</trans-unit>
+			<trans-unit id="flexform.selection.controller.action" xml:space="preserve">
+				<source>Controller &#171; Action &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.tab.pageIds" xml:space="preserve">
+				<source>&#171; Page IDs &#187;</source>
+			</trans-unit>
+			<trans-unit id="flexform.tab.settingsGeneral" xml:space="preserve">
+				<source>General settings</source>
+			</trans-unit>
+			<trans-unit id="label.general.category" xml:space="preserve">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="label.general.city" xml:space="preserve">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="label.general.comments" xml:space="preserve">
+				<source>Comments</source>
+			</trans-unit>
+			<trans-unit id="label.general.commentsEnable" xml:space="preserve">
+				<source>Enable comments</source>
+			</trans-unit>
+			<trans-unit id="label.general.content" xml:space="preserve">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="label.general.country" xml:space="preserve">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="label.general.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="label.general.email" xml:space="preserve">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="label.general.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="label.general.headline" xml:space="preserve">
+				<source>Headline</source>
+			</trans-unit>
+			<trans-unit id="label.general.image" xml:space="preserve">
+				<source>Image file</source>
+			</trans-unit>
+			<trans-unit id="label.general.images" xml:space="preserve">
+				<source>Image files</source>
+			</trans-unit>
+			<trans-unit id="label.general.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="label.general.mode" xml:space="preserve">
+				<source>Mode</source>
+			</trans-unit>
+			<trans-unit id="label.general.name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="label.general.salutation" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="label.general.street" xml:space="preserve">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="label.general.teaserImage" xml:space="preserve">
+				<source>Teaser image</source>
+			</trans-unit>
+			<trans-unit id="label.general.teaserText" xml:space="preserve">
+				<source>Teaser text</source>
+			</trans-unit>
+			<trans-unit id="label.general.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="label.general.type" xml:space="preserve">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="label.general.typoScript" xml:space="preserve">
+				<source>Settings via TypoScript</source>
+			</trans-unit>
+			<trans-unit id="label.general.user" xml:space="preserve">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="label.general.version" xml:space="preserve">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="label.general.website" xml:space="preserve">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="label.general.zipCode" xml:space="preserve">
+				<source>Zip code</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.code" xml:space="preserve">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeHighlighting" xml:space="preserve">
+				<source>Code highlighting</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeHighlightClass" xml:space="preserve">
+				<source>CSS class</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeHighlightLines" xml:space="preserve">
+				<source>Highlight lines</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeHighlightStyle" xml:space="preserve">
+				<source>CSS style</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeLanguage" xml:space="preserve">
+				<source>Programming language</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.codeStartingLine" xml:space="preserve">
+				<source>Starting line</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.contentType" xml:space="preserve">
+				<source>Content type</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.imageAdjustment" xml:space="preserve">
+				<source>Adjustment</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.imageCopyright" xml:space="preserve">
+				<source>Copyright</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.imageHeight" xml:space="preserve">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.imageThumbnail" xml:space="preserve">
+				<source>Use as thumbnail</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.imageWidth" xml:space="preserve">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.foreignTable" xml:space="preserve">
+				<source>Foreign table</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.headlineHide" xml:space="preserve">
+				<source>Hide Headline</source>
+			</trans-unit>
+			<trans-unit id="label.model.content.videoType" xml:space="preserve">
+				<source>Video type</source>
+			</trans-unit>
+			<trans-unit id="label.model.form.data" xml:space="preserve">
+				<source>Form data</source>
+			</trans-unit>
+			<trans-unit id="label.model.form.sender" xml:space="preserve">
+				<source>Sender</source>
+			</trans-unit>
+			<trans-unit id="label.model.form.type" xml:space="preserve">
+				<source>Form type</source>
+			</trans-unit>
+			<trans-unit id="label.model.testimonial.author" xml:space="preserve">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="label.model.testimonial.firm" xml:space="preserve">
+				<source>Firm</source>
+			</trans-unit>
+			<trans-unit id="label.model.testimonial.position" xml:space="preserve">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="label.model.testimonial.testimonial" xml:space="preserve">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="label.model.testimonial.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="label.persistence.storagePid" xml:space="preserve">
+				<source>Page(s) with the records</source>
+			</trans-unit>
+			<trans-unit id="model.comment" xml:space="preserve">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="model.content" xml:space="preserve">
+				<source>Content element</source>
+			</trans-unit>
+			<trans-unit id="model.form" xml:space="preserve">
+				<source>Form</source>
+			</trans-unit>
+			<trans-unit id="model.testimonial" xml:space="preserve">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="option.general.no" xml:space="preserve">
+				<source>Nein</source>
+			</trans-unit>
+			<trans-unit id="option.general.yes" xml:space="preserve">
+				<source>Ja</source>
+			</trans-unit>
+			<trans-unit id="pages.navIcon" xml:space="preserve">
+				<source>Navigation icon</source>
+			</trans-unit>
+			<trans-unit id="pages.navTitleSub" xml:space="preserve">
+				<source>Addition to the navigation title</source>
+			</trans-unit>
+			<trans-unit id="plugin.title" xml:space="preserve">
+				<source>njs Collection</source>
+			</trans-unit>
+			<trans-unit id="select.general.title.mr" xml:space="preserve">
+				<source>Mr</source>
+			</trans-unit>
+			<trans-unit id="select.general.title.ms" xml:space="preserve">
+				<source>Ms</source>
+			</trans-unit>
+			<trans-unit id="select.general.version.horizontal" xml:space="preserve">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="select.general.version.vertical" xml:space="preserve">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.code" xml:space="preserve">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.html" xml:space="preserve">
+				<source>HTML</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.imageGallery" xml:space="preserve">
+				<source>Image gallery</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.message" xml:space="preserve">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.text" xml:space="preserve">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.textImage" xml:space="preserve">
+				<source>Text &amp; image</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.ctype.video" xml:space="preserve">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.headlineStyle.3" xml:space="preserve">
+				<source>Headline 1 (H3)</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.headlineStyle.4" xml:space="preserve">
+				<source>Headline 2 (H4)</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.headlineStyle.5" xml:space="preserve">
+				<source>Headline 3 (H5)</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.imageAdjustment.center" xml:space="preserve">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.imageAdjustment.left" xml:space="preserve">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.imageAdjustment.right" xml:space="preserve">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.videoType.html5" xml:space="preserve">
+				<source>HTML5</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.videoType.vimeo" xml:space="preserve">
+				<source>Vimeo</source>
+			</trans-unit>
+			<trans-unit id="select.model.content.videoType.youtube" xml:space="preserve">
+				<source>Youtube</source>
+			</trans-unit>
+			<trans-unit id="tab.general.additionalInformation" xml:space="preserve">
+				<source>Additional information</source>
+			</trans-unit>
+			<trans-unit id="tab.general.categorization" xml:space="preserve">
+				<source>Categorization</source>
+			</trans-unit>
+			<trans-unit id="tab.general.comments" xml:space="preserve">
+				<source>Comments</source>
+			</trans-unit>
+			<trans-unit id="tab.general.content" xml:space="preserve">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="label.general.contentElements" xml:space="preserve">
+				<source>Content elements</source>
+			</trans-unit>
+			<trans-unit id="tab.general.description" xml:space="preserve">
+				<source>General settings</source>
+			</trans-unit>
+			<trans-unit id="tab.general.details" xml:space="preserve">
+				<source>Details</source>
+			</trans-unit>
+			<trans-unit id="tab.general.generalInformation" xml:space="preserve">
+				<source>General information</source>
+			</trans-unit>
+			<trans-unit id="tab.general.generalSettings" xml:space="preserve">
+				<source>General settings</source>
+			</trans-unit>
+			<trans-unit id="tab.general.image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tab.general.images" xml:space="preserve">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.code" xml:space="preserve">
+				<source>Programming code</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.content" xml:space="preserve">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.imageGallery" xml:space="preserve">
+				<source>Image gallery</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.type.code" xml:space="preserve">
+				<source>Content type &#187; Code</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.type.html" xml:space="preserve">
+				<source>Content type &#187; HTML</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.type.message" xml:space="preserve">
+				<source>Content type &#187; Message</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.type.text" xml:space="preserve">
+				<source>Content type &#187; Text</source>
+			</trans-unit>
+			<trans-unit id="tab.model.content.video" xml:space="preserve">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="tab.tt_content.deviceSettings" xml:space="preserve">
+				<source>Device settings (tx_njcollection)</source>
+			</trans-unit>
+			<trans-unit id="tsce.metaData.abstract" xml:space="preserve">
+				<target>Abstract</target>
+			</trans-unit>
+			<trans-unit id="tsce.metaData.description" xml:space="preserve">
+				<target>Description</target>
+			</trans-unit>
+			<trans-unit id="tsce.metaData.keywords" xml:space="preserve">
+				<target>Keywords</target>
+			</trans-unit>
+			<trans-unit id="tsce.persistence.storagePid" xml:space="preserve">
+				<source>Page(s) with the records</source>	
+			</trans-unit>
+			<trans-unit id="tt_content.bgColor" xml:space="preserve">
+				<source>Background color</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bgColorEnable" xml:space="preserve">
+				<source>Enable background color</source>
+			</trans-unit>
+			<trans-unit id="tt_content.class" xml:space="preserve">
+				<source>CSS class</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device" xml:space="preserve">
+				<source>Device</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.enable" xml:space="preserve">
+				<source>Enable device-specific output</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.orientation" xml:space="preserve">
+				<source>Orientation</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.orientation.enable" xml:space="preserve">
+				<source>Limit to an orientation</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.orientation.select.landscape" xml:space="preserve">
+				<source>Landscape</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.orientation.select.portrait" xml:space="preserve">
+				<source>Portrait</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.select.all" xml:space="preserve">
+				<source>All devices</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.select.desktop" xml:space="preserve">
+				<source>Desktop</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.select.style" xml:space="preserve">
+				<target>Inline style</target>
+			</trans-unit>
+			<trans-unit id="tt_content.device.select.tablet" xml:space="preserve">
+				<source>Tablet</source>
+			</trans-unit>
+			<trans-unit id="tt_content.device.select.mobile" xml:space="preserve">
+				<source>Mobile phone</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

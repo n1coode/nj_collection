@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-10-06" product-name="nj_collection">
+		<header/>
+		<body>
+			<trans-unit id="form.error.email.missing" xml:space="preserve">
+				<target>Keine E-Mail-Adresse angegeben.</target>
+			</trans-unit>
+			<trans-unit id="form.error.email.wrongFormat" xml:space="preserve">
+				<target>Angegebene E-Mail-Adresse scheint falsch zu sein.</target>
+			</trans-unit>
+			<trans-unit id="form.error.firstName.missing" xml:space="preserve">
+				<target>Kein Vorname angegeben.</target>
+			</trans-unit>
+			<trans-unit id="form.error.lastName.missing" xml:space="preserve">
+				<target>Kein Nachname angegeben.</target>
+			</trans-unit>
+			<trans-unit id="form.error.message.missing" xml:space="preserve">
+				<target>Keine Nachricht hinterlassen.</target>
+			</trans-unit>
+			<trans-unit id="form.error.message.tooShort" xml:space="preserve">
+				<target>Nachricht zu kurz. Mindestanzahl Zeichen: 50.</target>
+			</trans-unit>
+			<trans-unit id="form.error.name.missing" xml:space="preserve">
+				<target>Kein Name angegeben.</target>
+			</trans-unit>
+			<trans-unit id="form.info.errorsOccurs.body" xml:space="preserve">
+				<target>Entweder wurden nicht alle Pflichtfelder ausgefüllt oder es wurden fehlerhafte Eingaben getätigt.</target>
+			</trans-unit>
+			<trans-unit id="form.info.errorsOccurs.headline" xml:space="preserve">
+				<target>Überprüfe bitte deine Eingaben!</target>
+			</trans-unit>
+			<trans-unit id="form.info.mandatoryFields" xml:space="preserve">
+				<target>Die mit einem * gekennzeichneten Felder sind Pflichtangaben.</target>
+			</trans-unit>
+			<trans-unit id="form.label.country" xml:space="preserve">
+				<target>Land</target>
+			</trans-unit>
+			<trans-unit id="form.label.email" xml:space="preserve">
+				<target>E-Mail-Adresse</target>
+			</trans-unit>
+			<trans-unit id="form.label.firstName" xml:space="preserve">
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="form.label.lastName" xml:space="preserve">
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="form.label.location" xml:space="preserve">
+				<target>Ort</target>
+			</trans-unit>
+			<trans-unit id="form.label.message" xml:space="preserve">
+				<target>Nachricht</target>
+			</trans-unit>
+			<trans-unit id="form.label.name" xml:space="preserve">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="form.label.mobile" xml:space="preserve">
+				<target>Mobiltelefon</target>
+			</trans-unit>
+			<trans-unit id="form.label.phone" xml:space="preserve">
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="form.label.street" xml:space="preserve">
+				<target>Straße und Hausnummer</target>
+			</trans-unit>
+			<trans-unit id="form.label.subject" xml:space="preserve">
+				<target>Betreff</target>
+			</trans-unit>
+			<trans-unit id="form.label.url" xml:space="preserve">
+				<target>Internetseite</target>
+			</trans-unit>
+			<trans-unit id="form.label.zipCode" xml:space="preserve">
+				<target>Postleitzahl</target>
+			</trans-unit>
+			<trans-unit id="form.submit.sendMessage" xml:space="preserve">
+				<target>Nachricht senden</target>
+			</trans-unit>
+			<trans-unit id="form.success.dataSent" xml:space="preserve">
+				<target>Nachricht erfolgreich gesendet.</target>
+			</trans-unit>
+			<trans-unit id="form.success.thankYou" xml:space="preserve">
+				<target>Vielen Dank für Ihr Interesse! Wir werden uns schnellstmöglich mit Ihnen in Verbindung setzen.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

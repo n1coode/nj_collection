@@ -1,0 +1,26 @@
+<f:if condition="{socialMedia}">
+	<ul id="n1socialMedia" class="clearfix">
+		<f:if condition="{socialMedia.facebook}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.facebook}',class:'facebook'}" />
+		</f:if>
+		<f:if condition="{socialMedia.twitter}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.twitter}',class:'twitter'}" />
+		</f:if>
+		<f:if condition="{socialMedia.googlePlus}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.googlePlus}',class:'google-plus'}" />
+		</f:if>
+		<f:if condition="{socialMedia.xing}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.xing}',class:'xing'}" />
+		</f:if>
+		<f:if condition="{socialMedia.linkedIn}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.linkedIn}',class:'linkedin'}" />
+		</f:if>
+		<f:if condition="{socialMedia.youtube}">
+			<f:render section="listElement" arguments="{link:'{socialMedia.youtube}',class:'youtube'}" />
+		</f:if>
+	</ul>
+</f:if>
+
+<f:section name="listElement">
+	<li class="{class}"><a href="{link}" target="_blank" title="{class}"><i class="fa fa-{class}"></i></a></li>
+</f:section>

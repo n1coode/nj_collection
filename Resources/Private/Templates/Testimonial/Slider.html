@@ -1,0 +1,82 @@
+{namespace njVH=N1coode\NjInternship\ViewHelpers}
+<div id=tx_njcollection_testimonials_slider_{slider.uid} class="tx_njcollection testimonial slider clearfix" style="position: relative;">
+	<f:if condition="{testimonials}">
+        <f:then>
+			<div class="slider">
+			<ul class="testimonials">
+				<f:for each="{testimonials}" as="testimonial" iteration="testimonialIterator">
+					<li {f:if(condition:'{testimonial.image}',then:' class="hasImage"', else:'')}>
+						<div class="clearfix">
+							<div class="quote">
+								<f:format.raw><f:format.crop maxCharacters="250" respectHtml="TRUE">{testimonial.testimonial}</f:format.crop></f:format.raw>							</div>
+							<f:if condition="{testimonial.image}">
+								<div class="image">
+									<f:image src="{testimonial.image.uid}" alt="Autor" width="200c" height="200c" treatIdAsReference="1" />
+								</div>
+							</f:if>
+						</div>
+						<div class="author">
+							<p><f:if condition="{testimonial.author}"><strong>{testimonial.author}</strong><br/></f:if>
+							<i><f:if condition="{testimonial.position}">{testimonial.position}, </f:if>
+							<f:if condition="{testimonial.firm}">{testimonial.firm}</f:if></i></p>
+						</div>	
+					</li>
+				</f:for>
+			</ul></div> <!-- cd-testimonials -->
+			
+			<script>
+				//$(document).ready(function() 
+				//{
+				//	$('.jc-slider').jcSlider({
+				//		animationIn: 'bounceInRight',
+				//		animationOut: 'shake',
+				//		stopOnHover: false,
+				//	});
+				//});
+				$(document).ready(function()
+				{
+					//create the slider
+					$('.tx_njcollection.testimonial.slider > DIV.slider').flexslider({
+						selector: ".testimonials > li",
+						animation: "slide",
+						controlNav: true,
+						directionNav: false,
+						easing: 'easeInElastic',
+						slideshow: true,
+						smoothHeight: true,
+						direction: 'vertical',
+						useCSS: false,
+						manualControls: ".tx_njcollection.testimonial.slider > DIV.controls LI",
+						//controlsContainer: $(".tx_njcollection.testimonial.slider > DIV.controls"),
+						start: function() {
+							$('.testimonials').children('li').css({
+								'opacity': 1,
+								'position': 'relative',
+							});
+						}
+					});
+				});
+			</script>
+			
+			<div class="controls clearfix">
+				<ul class="controls clearfix">
+				<f:for each="{testimonials}" as="testimonial" iteration="testimonialIterator">
+					<li>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+	<path class="outline" stroke="#4CADC1" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="300" stroke-dashoffset="300" fill="none" d="M32,6c14.3,0,26,11.7,26,26S46.3,58,32,58S6,46.3,6,32S17.7,6,32,6 M32,5C17.1,5,5,17.1,5,32s12.1,27,27,27
+		s27-12.1,27-27S46.9,5,32,5L32,5z"/>
+<circle class="circle" fill="#1D1D1B" cx="32" cy="32" r="16"/>
+
+	<path class="border" fill="#1D1D1B" d="M32,8c13.2,0,24,10.8,24,24S45.2,56,32,56S8,45.2,8,32S18.8,8,32,8 M32,6C17.6,6,6,17.6,6,32s11.6,26,26,26
+		s26-11.6,26-26S46.4,6,32,6L32,6z"/>
+</svg>
+					</li>
+			
+				</f:for>
+					</ul>
+			</div>
+			
+		</f:then>
+    </f:if>
+	
+</div>

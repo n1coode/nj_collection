@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-10-06" product-name="nj_collection">
+		<header/>
+		<body>
+			<trans-unit id="form.error.email.missing" xml:space="preserve">
+				<source>Keine E-Mail-Adresse angegeben.</source>
+			</trans-unit>
+			<trans-unit id="form.label.country" xml:space="preserve">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="form.label.email" xml:space="preserve">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="form.label.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="form.label.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="form.label.location" xml:space="preserve">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="form.label.message" xml:space="preserve">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="form.label.mobile" xml:space="preserve">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="form.label.name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="form.label.phone" xml:space="preserve">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="form.label.street" xml:space="preserve">
+				<source>Street and street number</source>
+			</trans-unit>
+			<trans-unit id="form.label.subject" xml:space="preserve">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="form.label.url" xml:space="preserve">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="form.label.zipCode" xml:space="preserve">
+				<source>Zip code</source>
+			</trans-unit>
+			<trans-unit id="form.submit.sendMessage" xml:space="preserve">
+				<source>Send message</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,208 @@
+#
+# Plugin configuration
+# nj_collection
+#
+plugin.tx_njcollection {
+    settings {
+        general {
+            includeJQuery = {$plugin.tx_njcollection.settings.general.includeJQuery}
+            includeCss = {$plugin.tx_njcollection.settings.general.includeCss}
+            cssFile = {$plugin.tx_njcollection.settings.general.cssFile}
+            ajax {
+                typeNum = 652655328
+            }
+        }
+		
+		controller {
+			logo {
+				brand = {$plugin.tx_njcollection.settings.controller.logo.brand}
+				monochrome = {$plugin.tx_njcollection.settings.controller.logo.monochrome}
+				version = {$plugin.tx_njcollection.settings.controller.logo.version}
+			}
+		}
+
+		contactData {
+			address {
+				city = {$plugin.tx_njcollection.settings.contactData.address.city}
+				country = {$plugin.tx_njcollection.settings.contactData.address.country}
+				name = {$plugin.tx_njcollection.settings.contactData.address.name}
+				street = {$plugin.tx_njcollection.settings.contactData.address.street}
+				zipCode = {$plugin.tx_njcollection.settings.contactData.address.zipCode}
+			}
+			fax = {$plugin.tx_njcollection.settings.contactData.fax}
+			mail = {$plugin.tx_njcollection.settings.contactData.mail}
+			mobile = {$plugin.tx_njcollection.settings.contactData.mobile}
+			socialMedia {
+				facebook = {$plugin.tx_njcollection.settings.contactData.socialMedia.facebook}
+				googlePlus = {$plugin.tx_njcollection.settings.contactData.socialMedia.googlePlus}
+				linkedIn = {$plugin.tx_njcollection.settings.contactData.socialMedia.linkedIn}
+				twitter = {$plugin.tx_njcollection.settings.contactData.socialMedia.twitter}
+				xing = {$plugin.tx_njcollection.settings.contactData.socialMedia.xing}
+				youtube = {$plugin.tx_njcollection.settings.contactData.socialMedia.youtube}
+			}
+			telephone = {$plugin.tx_njcollection.settings.contactData.telephone}
+		}
+
+		metaData {
+			abstract = {$plugin.tx_njcollection.settings.metaData.abstract}
+			description = {$plugin.tx_njcollection.settings.metaData.description}
+			keywords = {$plugin.tx_njcollection.settings.metaData.keywords}
+		}
+
+        model {
+            header { 
+                collectionId = {$plugin.tx_njcollection.settings.model.header.collectionId}
+            }
+        }
+    }
+    
+    persistence {
+        storagePid = {$plugin.tx_njcollection.persistence.storagePid}
+    }
+	
+    view {
+        templateRootPath = {$plugin.tx_njcollection.view.templateRootPath}
+        partialRootPath = {$plugin.tx_njcollection.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_njcollection.view.layoutRootPath}
+    }
+}
+
+plugin.tx_njcollection {
+	parseFunc < lib.parseFunc_RTE
+}
+
+
+#
+# AJAX Page Prototype
+# typeNum: njcollect -> handykeyboard -> 652655328 (has to be < 2147483647)
+# 
+lib.AJAXPrototype= PAGE
+lib.AJAXPrototype {
+    typeNum = 652655328
+    config {
+        disableAllHeaderCode = 1
+        xhtml_cleaning = 0
+        admPanel = 0
+        debug = 0
+        no_cache = 1
+        additionalHeaders = Content-type:application/json
+    }
+}
+
+
+#  
+# nj_collection -> ajax
+#
+AJAX_njcollection < lib.AJAXPrototype
+AJAX_njcollection {
+	
+    typeNum = 652655328
+	 
+    10 = USER
+    10 {
+        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+        vendorName = N1coode
+        extensionName = NjCollection
+        pluginName = Pi1
+        settings =< plugin.tx_njcollection.settings
+        persistence =< plugin.tx_njcollection.persistence
+        view =< plugin.tx_njcollection.view
+        switchableControllerActions {
+            Ajax {
+                1 = getImages
+            }
+            Collection {
+                
+            }
+        }
+    }
+}
+
+lib.tx_njcollection = USER
+lib.tx_njcollection {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = NjCollection
+    pluginName = Pi1
+    vendorName = N1coode
+    controller = Contact
+    action = address
+	settings =< plugin.tx_njcollection.settings
+	persistence =< plugin.tx_njcollection.persistence
+	view =< plugin.tx_njcollection.view
+    switchableControllerActions {
+		Contact {
+			1 = address
+			2 = socialMedia
+		}
+	}
+    
+}
+
+lib.tx_njcollection.contactData.address < lib.tx_njcollection
+lib.tx_njcollection.contactData.address {
+	action = address
+}
+
+lib.tx_njcollection.contactData.socialMedia < lib.tx_njcollection
+lib.tx_njcollection.contactData.socialMedia {
+	action = socialMedia
+	switchableControllerActions {
+		Contact {
+			1 = socialMedia
+			2 = address
+		}
+	}
+}
+
+lib.tx_njcollection.logo.svg = USER
+lib.tx_njcollection.logo.svg {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = NjCollection
+    pluginName = Pi1
+    vendorName = N1coode
+    controller = Logo
+    action = svg
+	settings =< plugin.tx_njcollection.settings
+	persistence =< plugin.tx_njcollection.persistence
+	view =< plugin.tx_njcollection.view
+    
+	switchableControllerActions {
+		Logo {
+			1 = svg
+		}
+	}
+    arguments {
+		brand = n1coode
+		version = standard
+		monochrome = true
+	}
+}
+
+
+#page.includeJSLibs.pace = EXT:nj_collection/Resources/Public/Javascript/Lib/Pace/1.0.2/pace.min.js
+#page.includeJSFooter.tx_njcollection = EXT:nj_collection/Resources/Public/JavaScript/tx_njcollection_frontend.js
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('nj_page')] && [globalVar = LIT:1 = {$tx_njpage.js.requireJs}] && [globalVar = LIT:1 > {$tx_njpage.js.angularJS}]
+page.headerData.110 = TEXT 
+page.headerData.110.value(
+			njCollection: '../../../../nj_collection/Resources/Public/JavaScript/NjCollection',
+			njCollectionCarousel: '../../../../nj_collection/Resources/Public/JavaScript/NjCollectionCarousel',
+)
+[global]
+
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('nj_page')] && [globalVar = LIT:1 = {$tx_njpage.js.requireJs}] && [globalVar = LIT:1 = {$tx_njpage.js.angularJS}]
+page.headerData.110 = TEXT 
+page.headerData.110.value(
+			njCollection: '../../../../../typo3conf/ext/nj_collection/Resources/Public/JavaScript/NjCollection',
+			njCollectionCarousel: '../../../../../typo3conf/ext/nj_collection/Resources/Public/JavaScript/NjCollectionCarousel',
+)
+[global]
+
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('nj_page')] && [globalVar = LIT:1 = {$tx_njpage.js.requireJs}]
+page.headerData.210 = TEXT
+page.headerData.210.value(
+			"njCollection": ["jquery"],
+			"njCollectionCarousel": ["njCollection"],
+)
+[global]
+
+

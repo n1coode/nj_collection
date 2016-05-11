@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'nj_collection'.</description>
+	</meta> 
+	<data type="array"> 
+		<languageKey index="default" type="array">
+			<label index="flexform.general.typoScript">Settings via TypoScript</label>
+			<label index="flexform.mode">What to display</label>
+			<label index="flexform.mode.contact.address">Contact &#171; Address &#187;</label>
+			<label index="flexform.mode.contact.socialMedia">Contact &#171; Social media &#187;</label>
+			<label index="flexform.persistence.storagePid">Page(s) with the records</label>
+			<label index="general.option.no">No</label>
+            <label index="general.option.yes">Yes</label>
+			<label index="general.tab.additionalInformation">Additional information</label>
+			<label index="general.tab.categorization">Categorization</label>
+			<label index="general.tab.content">Content</label>
+			<label index="general.tab.description">Description</label>
+			<label index="general.tab.details">Details</label>
+			<label index="general.tab.settingsGeneral">General settings</label>
+			<label index="general.tab.generalInformation">General information</label>
+			<label index="general.tab.image">Image</label>
+			<label index="general.title">Title:</label>
+			<label index="general.website">Website:</label>
+			<label index="pages.navIcon">Navigation icon:</label>
+			<label index="pages.navTitleSub">Addition to the navigation title:</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="flexform.general.typoScript">Einstellungen durch TypoScript</label>
+			<label index="flexform.mode">Modus (Ansicht)</label>
+			<label index="flexform.mode.contact.address">Kontakt &#171; Adresse &#187;</label>
+			<label index="flexform.mode.contact.socialMedia">Kontakt &#171; Social-Media &#187;</label>
+			<label index="flexform.mode.header.index">Header &#171; Index &#187;</label>
+			<label index="flexform.mode.imageGallery.list">Bildgalerie &#171; Liste &#187;</label>
+			<label index="flexform.persistence.storagePid">Seite(n) mit den Datensätzen</label>
+			<label index="general.option.no">Nein</label>
+            <label index="general.option.yes">Ja</label>
+			<label index="general.tab.additionalInformation">Zusätzliche Angaben</label>
+			<label index="general.tab.categorization">Kategorisierung</label>
+			<label index="general.tab.content">Inhalt</label>
+			<label index="general.tab.description">Beschreibung</label>
+			<label index="general.tab.details">Details</label>
+			<label index="general.tab.generalInformation">Allgemeine Informationen</label>
+			<label index="general.tab.image">Bilddatei</label>
+			<label index="general.tab.settingsGeneral">Generelle Einstellungen</label>
+			
+			<label index="general.title">Titel:</label>
+			<label index="general.website">Internetseite:</label>
+			<label index="pages.navIcon">Navigation-Icon:</label>
+			<label index="pages.navTitleSub">Erweiterung des Navigationstitels:</label>
+		</languageKey>
+	</data>
+</T3locallang>

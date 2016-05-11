@@ -1,0 +1,46 @@
+<div class="ajax loader">
+	<div class="wrapper" style="margin: 25px auto;{f:if(condition:'{width}',then:'width: {width}px;',else:'')}{f:if(condition:'{height}',then:'height: {height}px;',else:'')}">
+		<f:render section="{type}" />
+	</div>
+</div>
+
+
+<f:section name="jumping-balls">
+<svg width='100%' height='100%' viewBox="0 0 100 100" class="jumping-balls">
+	<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+	<g transform="rotate(0 50 50)">
+		<circle r="5" cx="10" cy="50">
+			<animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;39.99999999999999 -40" keyTimes="0;1"/>
+			<animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#b5ccf1;#94a9ce"/>
+		</circle>
+	</g>
+	<g transform="rotate(90 50 50)">
+		<circle r="5" cx="10" cy="50">
+			<animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;39.99999999999999 -40" keyTimes="0;1"/>
+			<animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#94a9ce;#667395"/>
+		</circle>
+	</g>
+	<g transform="rotate(180 50 50)">
+		<circle r="5" cx="10" cy="50">
+			<animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;39.99999999999999 -40" keyTimes="0;1"/>
+			<animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#667395;#292664"/>
+		</circle>
+	</g>
+	<g transform="rotate(270 50 50)">
+		<circle r="5" cx="10" cy="50">
+			<animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;39.99999999999999 -40" keyTimes="0;1"/>
+			<animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#292664;#b5ccf1"/>
+		</circle>
+	</g>
+</svg>
+</f:section>
+
+<f:section name="ring">
+<svg width='100%' height='100%' viewBox="0 0 100 100" class="ring">
+	<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+	<circle cx="50" cy="50" r="40" stroke="#667395" fill="none" stroke-width="6" stroke-linecap="round">
+		<animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"></animate>
+		<animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"></animate>
+	</circle>
+</svg>
+</f:section>

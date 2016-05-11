@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for backend of the extension 'nj_collection'.</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="flexforms_general.mode">What to display</label>
+            <label index="flexforms.tab.categorization">&#171; Categorization &#187;</label>
+            <label index="flexforms.tab.settings">Settings</label>
+            <label index="flexforms.label.general.includeJQuery">Include the plugins JQuery library (version 1.11.1)</label>
+            <label index="flexforms.label.general.typoScript">Settings via TypoScript</label>
+            <label index="flexforms.label.persistence.storagePid">Page(s) with the records</label>			
+            <label index="flexforms.option.general.no">No</label>
+            <label index="flexforms.option.general.typoScript">TypoScript</label>
+            <label index="flexforms.option.general.yes">Yes</label>
+            <label index="tsce.general.cssFile">Link to your own Css file:</label>
+            <label index="tsce.general.includeCss">Include own Css file:</label>
+            <label index="tsce.general.includeJquery">Include jQuery library:</label>
+            <label index="flexforms_general.mode.imageGallery.list">Image gallery &#171; List &#187;</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="flexforms_general.mode">Modus (Ansicht)</label>
+            <label index="flexforms.tab.categorization">&#171; Kategorisierung &#187;</label>
+            <label index="flexforms.tab.pageIds">Seiten-IDs</label>
+            <label index="flexforms.tab.settings">Einstellungen</label>
+            <label index="flexforms.tab.settingsEffects">Effekt-Einstellungen</label>
+            <label index="flexforms.tab.settingsGeneral">Generelle Einstellungen</label>
+            <label index="flexforms.tab.tour">&#171; Reise &#187;</label>
+            <label index="flexforms.label.general.category">Kategorie:</label>
+            <label index="flexforms.label.general.includeJQuery">JQuery-Bibliothek des Plugins einbinden (Version 1.11.1)</label>
+            <label index="flexforms.label.general.typoScript">Einstellungen durch TypoScript</label>
+            <label index="flexforms.label.general.effect">Effekt</label>
+            <label index="flexforms.label.general.useCategory">Kategorie verwenden:</label>
+            <label index="flexforms.label.general.view">Ansicht</label>
+            <label index="flexforms.label.persistence.storagePid">Seite(n) mit den Datensätzen</label>
+            <label index="flexforms.option.general.effect.fade">Fade</label>
+            <label index="flexforms.option.general.effect.kick">Kick</label>
+            <label index="flexforms.option.general.effect.slide">Slide</label>
+            <label index="flexforms.option.general.no">Nein</label>
+            <label index="flexforms.option.general.typoScript">TypoScript</label>
+			<label index="flexforms.option.general.no">Nein</label>
+            <label index="flexforms.option.general.yes">Ja</label>
+            <label index="flexforms.option.general.view.tour.index">Reise &#171; Übersicht &#187;</label>
+            <label index="flexforms.option.general.view.tour.focus">Reise &#171; Einzelansicht &#187;</label>
+            <label index="flexforms.option.general.view.tour.list">Reise &#171; Liste &#187;</label>
+            <label index="tsce.general.cssFile">Link zur eigenen Css-Datei:</label>
+            <label index="tsce.general.includeCss">Eigene Css-Datei einbinden:</label>
+            <label index="tsce.general.includeJquery">jQuery-Bibliothek einbinden:</label>
+            <label index="tsce.exhibition.singleViewPid">Seiten-Id mit der Archivansicht:</label>
+            <label index="tsce.exhibition.listPid">Seiten-ID mit der Listen-Ansicht:</label>
+            <label index="tsce.exhibition.singleViewPid">Seiten-Id mit der Einzelansicht:</label>
+            <label index="flexforms_general.mode.imageGallery.list">Bildergalerie &#171; Liste &#187;</label>			
+        </languageKey> 
+    </data>
+</T3locallang>

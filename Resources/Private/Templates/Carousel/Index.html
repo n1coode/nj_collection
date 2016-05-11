@@ -1,0 +1,18 @@
+{namespace f=N1coode\NjCollection\ViewHelpers}
+{namespace f=N1coode\NjPage\ViewHelpers}
+<f:wrapAction ext="{ext}" additionalAttributes="{data-carousel:ext.action,data-uid:ext.uid}">
+	<f:if condition="{images}">
+		<f:then>
+			<div class="overlay"></div>
+			<div class="filter"><f:image src="fileadmin/layout/com.berliner-galerie/v5/Public/Gfx/overlay.png" /></div>
+			<div class="collection">
+				<f:for each="{images}" as="image" iteration="iterator">
+					<f:alias map="{width:'1920'}">
+						<div class="item image retro-1977" style="background-image: url('{f:uri.image(src:'{image.reference.uid}',treatIdAsReference:'1',width:'{width}',height:'{f:ratio(input:width)}c' )}');"></div>
+					</f:alias>
+				</f:for>
+			</div>
+		</f:then>
+		<f:else>Message no images found</f:else>
+	</f:if>
+</f:wrapAction>

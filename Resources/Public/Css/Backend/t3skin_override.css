@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25.11.2015, 15:56:15
+    Author     : Nico Jatzkowski <nj@n1coo.de>
+*/
+UL.nav-tabs.t3js-tabs LI.t3js-tabmenu-item.active A,
+UL.nav-tabs.t3js-tabs LI.t3js-tabmenu-item.active A:before {
+  font-size: 16px;
+}
+UL.nav-tabs.t3js-tabs LI.t3js-tabmenu-item.active A {
+  background-color: rgba(42, 42, 42, 0.1);
+}
+UL.nav-tabs.t3js-tabs LI.t3js-tabmenu-item.active.has-validation-error A:before {
+  padding-top: 2px;
+  width: 25px;
+  height: auto;
+  border-radius: initial;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.33);
+  border-radius: 3px;
+}
+.form-group.t3js-formengine-validation-marker.t3js-formengine-palette-field.has-error .t3js-formengine-label::before {
+  font-size: 18px;
+  color: black;
+  text-shadow: 0px 0px 5px #ffffff;
+  padding: 0 5px;
+}
+.form-group.t3js-formengine-validation-marker.t3js-formengine-palette-field.has-error .form-multigroup-item.form-multigroup-element LABEL::before {
+  font-size: 18px;
+  content: "\f101";
+}
+.t3js-formengine-label {
+  display: block;
+  padding: 5px;
+  color: #efefef;
+  background-color: #2a2a2a;
+}
+.t3js-formengine-label:empty,
+.t3js-formengine-label:blank,
+.t3js-formengine-label:-moz-only-whitespace {
+  display: none;
+}
+.panel.panel-default.panel-condensed.panel-visible .t3js-formengine-label {
+  background-color: #666;
+}
+/*# sourceMappingURL=t3skin_override.css.map */

@@ -1,0 +1,38 @@
+{namespace njVH=N1coode\NjInternship\ViewHelpers}
+<div id=tx_njinternship_testimonials_list" class="tx_njinternship testimonial list clearfix">
+	<f:if condition="{testimonials}">
+        <f:then>
+			<ul class="testimonials">
+				<f:for each="{testimonials}" as="testimonial" iteration="testimonialIterator">
+					<li {f:if(condition:'{testimonial.image}',then:' class="hasImage"', else:'')}>
+						<div class="author">
+							<h2>
+							<f:if condition="{testimonial.author}"><f:format.raw>{testimonial.author}</f:format.raw></f:if>
+							<f:if condition="{testimonial.direction}">, {testimonial.direction.title} </f:if>
+							(<f:translate key="tx_njinternship_domain_model_internship.select.duration.{testimonial.duration}"></f:translate>)
+							</h2>
+						</div>
+						<div class="clearfix">
+							<div class="quote">
+								<f:format.raw>{testimonial.testimonial}</f:format.raw>
+							</div>
+							<f:if condition="{testimonial.image}">
+								<div class="image">
+									<f:image src="{testimonial.image.uid}" alt="Autor" width="200c" height="200c" treatIdAsReference="1" />
+								</div>
+							</f:if>
+						</div>	
+						<f:be.security.ifHasRole role="1">
+							<f:render section="direction" arguments="{direction:'{testimonial.direction}'}" />
+						</f:be.security.ifHasRole>
+					</li>
+				</f:for>
+			</ul> <!-- cd-testimonials -->
+		</f:then>
+    </f:if>
+</div>
+
+
+<f:section name="direction">
+	<f:link.action pageUid="{settings.model.internship.listPid}" controller="Internship" arguments="{direction:'{direction.uid}'}"> <f:format.raw>{direction.title}</f:format.raw></f:link.action>
+</f:section>

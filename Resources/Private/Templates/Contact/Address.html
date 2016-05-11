@@ -1,0 +1,21 @@
+
+<f:if condition="{contactData}">
+	<div class="tx_njcollection contact compact">
+		<f:if condition="{contactData.address}">
+			<ul>
+				<li class="address clearfix">
+					<i class="fa fa-home"></i>
+					<div>
+						<strong>{contactData.address.name}</strong><br />
+						{contactData.address.street}<br />
+						{contactData.address.country} - {contactData.address.zipCode} {contactData.address.city}<br />
+					</div>
+				</li>
+				<li class="location clearfix" data-task="n1show-googleMap">
+					<i class="fa fa-map-marker"></i>
+					<div>Standort anzeigen</div>
+				</li>
+			</ul>
+		</f:if>
+	</div>
+</f:if>

@@ -1,0 +1,7 @@
+{namespace njVH=N1coode\NjCollection\ViewHelpers}
+
+<f:if condition="{images}">
+    <f:for each="{images}" as="image" iteration="imageIterator">
+        <f:image src="fileadmin{image.properties.identifier}" width="200c" height="150c" minWidth="200c" minHeight="150c" maxWidth="200c" maxHeight="150c"  alt="" />
+    </f:for>
+</f:if>
